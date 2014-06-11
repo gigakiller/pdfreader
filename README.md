@@ -1,10 +1,8 @@
-#PDF Reader for Titanium Android Apps
+#PDF Reader
 
 ## Description
 
 This module extends https://github.com/JoanZapata/android-pdfview in titanium. 
-
-Note : only the basic usage is extend for now.
 
 ## Usage
 

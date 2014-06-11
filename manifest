@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: PDF Reader for Titanium Andorid Apps
+author: Manoj Kumar
+license: Specify your license
+copyright: @ 2014
+
+
+# these should not be edited
+name: pdfreader
+moduleid: com.mykingdom.pdfreader
+guid: 69d7661e-9a99-4c32-b8a1-11e37f1a13ff
+platform: android
+minsdk: 3.2.3.GA

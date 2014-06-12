@@ -1,39 +1,17 @@
-# pdfreader Module
-
-## Description
-
-TODO: Enter your module description here
-
-## Accessing the pdfreader Module
-
-To access this module from JavaScript, you would do the following:
-
-	var pdfreader = require("com.mykingdom.pdfreader");
-
-The pdfreader variable is a reference to the Module object.	
-
-## Reference
-
-TODO: If your module has an API, you should document
-the reference here.
-
-### ___PROJECTNAMEASIDENTIFIER__.function
-
-TODO: This is an example of a module function.
-
-### ___PROJECTNAMEASIDENTIFIER__.property
-
-TODO: This is an example of a module property.
-
 ## Usage
 
-TODO: Enter your usage example here
-
-## Author
-
-TODO: Enter your author name, email and other contact
-details you want to share here. 
-
-## License
-
-TODO: Enter your license/legal information here.
+```javascript
+var win = Ti.UI.createWindow({
+	backgroundColor : 'white',
+	exitOnClose : true
+});
+if (Ti.Platform.name == "android") {
+	var pdfreader = require('com.mykingdom.pdfreader');
+	var pdfReader = pdfreader.createReader();
+	win.add(pdfReader);
+	//Make sure the file exists
+	var file = Ti.Filesystem.getFile(Ti.Filesystem.externalStorageDirectory, "sample.pdf");
+	pdfReader.loadPDFFromFile(file);
+}
+win.open();
+```
